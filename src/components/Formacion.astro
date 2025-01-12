@@ -1,0 +1,65 @@
+---
+import educationData from '../datos/formacion.json'
+---
+<div class="w-5/6 ml-[16.66%] min-h-full bg-gray-100">
+  <h1 id="formacion" class="text-3xl md:text-4xl font-bold mb-10 ml-5 text-left text-slate-600 mt-16">Formacion</h1>
+  <div class="p-8 mr-6 ml-6 bg-white shadow-md rounded-lg">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {educationData.map((item) => (
+          <div class="relative flex items-start space-x-4" key={item.title}>
+            <div class="flex flex-col items-center">
+              <div class="relative flex-shrink-0 w-8 h-8">
+                <div class="absolute w-8 h-8 bg-blue-100 rounded-full"></div>
+                <div class="absolute w-4 h-4 bg-blue-500 rounded-full top-2 left-2"></div>
+              </div>
+              <div class="flex flex-col items-center space-y-1 mt-2">
+                {Array.from({ length: 8 }).map((_, i) => (
+                  <div key={i} class="w-1 h-2 bg-blue-500"></div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center space-x-2">
+                <h3 class="text-lg font-semibold">{item.title}</h3>
+                {item.status && (
+                  <span class="text-sm text-[#047857] bg-[#A7F3D0] px-2 py-1 rounded">
+                    {item.status}
+                  </span>
+                )}
+              </div>
+              <p class="text-xl text-gray-500 mt-2 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#3B82F6"
+                  stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                  <path d="M3 21l18 0"></path>
+                  <path d="M5 21v-14l8 -4v18"></path>
+                  <path d="M19 21v-10l-6 -4"></path>
+                  <path d="M9 9l0 .01"></path>
+                  <path d="M9 12l0 .01"></path>
+                  <path d="M9 15l0 .01"></path>
+                  <path d="M9 18l0 .01"></path>
+                </svg>
+                {item.institution}
+              </p>
+              <p class="text-xl text-gray-400 mt-1 flex">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#3B82F6"
+                  stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                  <path d="M4 7a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12z"></path>
+                  <path d="M16 3v4"></path>
+                  <path d="M8 3v4"></path>
+                  <path d="M4 11h16"></path>
+                  <path d="M7 14h.013"></path>
+                  <path d="M10.01 14h.005"></path>
+                  <path d="M13.01 14h.005"></path>
+                  <path d="M16.015 14h.005"></path>
+                  <path d="M13.015 17h.005"></path>
+                  <path d="M7.01 17h.005"></path>
+                  <path d="M10.01 17h.005"></path>
+                </svg>
+                {item.dates}
+              </p>
+            </div>
+          </div>
+        ))}
+    </div>
+  </div>
+</div>

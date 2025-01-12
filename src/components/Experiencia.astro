@@ -1,0 +1,44 @@
+---
+import infoExperiencia from '../datos/experiencia.json'
+
+// Extraer el título de la sección desde el primer elemento
+const nombreSeccion = infoExperiencia?.nombreSeccion || 'Sección';
+---
+
+<div class="w-5/6 ml-[16.66%] min-h-full bg-gray-100">
+  <!-- Sección "Experiencia laboral" -->
+  <section id="experiencia" class="w-full py-2 bg-white rounded-lg relative">
+    <!-- Encabezado con icono -->
+    <div class="flex items-center space-x-4 mt-5 mb-8 mx-5 ">
+      <div class="text-black text-2xl flex-shrink-0">
+        <!-- Ícono de maletín -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-linecap="round" stroke-linejoin="round" width="28" height="28" stroke-width="2">
+          <path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+          <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
+          <path d="M12 12l0 .01"></path>
+          <path d="M3 13a20 20 0 0 0 18 0"></path>
+        </svg>
+      </div>
+      <h2 class="text-3xl md:text-4xl font-bold text-left text-slate-600">{nombreSeccion}</h2>
+    </div>
+
+    
+    <div class="flex gap-6 bg-white rounded-lg p-4 relative">
+      {infoExperiencia.experiences.map((item) => (
+        <div class="grid grid-cols-2">
+          <div class="absolute left-8 top-0 h-full border-l-4 bg-gray-600"></div>
+          <div class="absolute top-2 left-[26px] w-4 h-4 mt-3 bg-[#4C1D95] rounded-full"></div>
+          <div class="flex flex-col pl-12 max-w-4xl">
+            <h3 class="text-purple-700 font-bold text-xl mt-[-4px]">{item.title}</h3>
+            <p class="text-gray-600 text-lg font-medium">{item.institution}</p>
+            <p class="text-sm text-gray-500">{item.dates}</p>
+          </div>
+          <div class="w-[85%] pr-5 text-lg">
+            <p class="text-gray-700">{item.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</div>
