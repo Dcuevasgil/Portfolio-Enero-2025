@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Técnico Superior en Desarrollo de Aplicaciones Web",
+    "status": "Actualmente en curso",
+    "institution": "Santa Joaquina de Vedruna",
+    "dates": "Oct 2023 - Actualidad"
+  },
+  {
+    "title": "Curso de programacion en Python",
+    "institution": "Certificado por IBM SkillBuild",
+    "dates": "Oct - Dic 2024"
+  },
+  {
+    "title": "Curso de SQL",
+    "institution": "Certificado por IBM SkillBuild",
+    "dates": "May - Jul 2024"
+  },
+  {
+    "title": "Curso de Microsoft Power BI",
+    "institution": "Certificado por IBM SkillBuild",
+    "dates": "Feb - Abr 2024"
+  }
+]

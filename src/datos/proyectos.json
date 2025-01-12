@@ -1,0 +1,21 @@
+{
+  "nombreSeccion": "Proyectos",
+  "experiences": [
+    {
+      "nombre": "Clon de X - Proyecto de primer trimestre, desarrollado en PHP con la funcionalidad de Twitter (X)",
+      "imagen": "../../public/Caratula_X.JPG",
+      "imagenAutor": "../../public/perfil.jpeg",
+      "autor": "David Cuevas",
+      "fechaProyecto": "HACE 1 AÑO",
+      "lenguajeProgramacion": "#php"
+    },
+    {
+      "nombre": "Portfolio - Proyecto Trabajo final primer trimestre, desarrollado en Astro",
+      "imagen": "../../public/Portfolio.JPG",
+      "imagenAutor": "../../public/perfil.jpeg",
+      "autor": "David Cuevas",
+      "fechaProyecto": "HACE 1 AÑO",
+      "lenguajeProgramacion": "#astro"
+    }
+  ]
+}

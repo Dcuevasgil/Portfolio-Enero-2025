@@ -1,0 +1,64 @@
+{
+  "habilidades": [
+    {
+      "imagen": "../../public/AstroLogo.svg",
+      "tecnologia": "Astro",
+      "nivel": 2
+    },
+    {
+      "imagen": "../../public/CSSLogo.svg",
+      "tecnologia": "CSS",
+      "nivel": 5
+    },
+    {
+      "imagen": "../../public/FigmaLogo.svg",
+      "tecnologia": "Figma",
+      "nivel": 4
+    },
+    {
+      "imagen": "../../public/HTMLogo.svg",
+      "tecnologia": "HTML",
+      "nivel": 5
+    },
+    {
+      "imagen": "../../public/JavaLogo.svg",
+      "tecnologia": "Java",
+      "nivel": 4
+    },
+    {
+      "imagen": "../../public/JavaScriptLogo.svg",
+      "tecnologia": "JavaScript",
+      "nivel": 3
+    },
+    {
+      "imagen": "../../public/php_logo.png",
+      "tecnologia": "PHP",
+      "nivel": 3
+    },
+    {
+      "imagen": "../../public/PythonLogo.svg",
+      "tecnologia": "Python",
+      "nivel": 4
+    },
+    {
+      "imagen": "../../public/ReactLogo.svg",
+      "tecnologia": "React",
+      "nivel": 3
+    },
+    {
+      "imagen": "../../public/SQLogo.svg",
+      "tecnologia": "SQL",
+      "nivel": 4
+    },
+    {
+      "imagen": "../../public/SpringLogo.svg",
+      "tecnologia": "Spring",
+      "nivel": 4
+    },
+    {
+      "imagen": "../../public/CSSLogo.svg",
+      "tecnologia": "Tailwind",
+      "nivel": 3
+    }
+  ]
+}
