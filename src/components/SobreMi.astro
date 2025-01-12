@@ -1,0 +1,27 @@
+---
+import info from '../datos/sobreMi.json';
+
+const { titulo, descripcion, imagen, enfoque, idiomas } = info;
+---
+<div class="w-5/6 ml-[16.66%] min-h-full bg-gray-100">     
+    <!-- About Section -->
+    <section id="sobre-mi" class="bg-white rounded-lg shadow-md p-8 w-full flex justify-center items-center">
+        <div class="flex flex-col items-center sm:flex-row sm:items-start gap-10 w-full h-full">            
+            <!-- Imagen -->
+            <img 
+                src={imagen} 
+                alt="Imagen personal" 
+                class="rounded-3xl h-80 object-cover shadow-lg ml-32"
+            />
+
+            <!-- Texto adicional -->
+            <div class="flex-1 self-center ml-8">
+                <h2 class="text-7xl mb-6 font-semibold text-[#77CDC1] sm:text-left uppercase">Sobre Mi</h2>
+                <!-- Descripción -->
+                <p class="text-gray-700 text-center sm:text-left flex-1 self-center pr-28">{descripcion}</p>
+                <p class="text-gray-700 mt-4 mr-32">{enfoque}</p>
+                <p class="text-gray-700 mt-4">{idiomas}</p>
+            </div>
+        </div>
+    </section>
+</div>

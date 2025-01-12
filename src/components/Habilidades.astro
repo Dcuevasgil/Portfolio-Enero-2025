@@ -1,0 +1,63 @@
+---
+import infoHabilidades from '../datos/habilidades.json';
+---
+
+<div class="w-5/6 ml-[16.66%] min-h-full bg-gray-100">
+  <div class="w-full bg-gray-100">
+    <!-- Sección "Habilidades" -->
+    <section id="habilidades" class="w-5/6 mx-auto py-5 bg-slate-100">
+      <div class="w-full h-full">
+        <h1 class="text-3xl md:text-4xl font-bold mb-5 text-left text-slate-600">Habilidades</h1>
+        <!-- Contenedor principal -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 border border-slate-400 bg-[#282828] text-white rounded-lg">
+          <ul class="space-y-4 p-6">
+            <!-- Primera columna de habilidades -->
+            {infoHabilidades.habilidades.slice(0, 6).map(({ imagen, tecnologia, nivel }) => (
+              <li class="flex items-center space-x-4" key={tecnologia}>
+                {imagen && (
+                  <img src={imagen} alt={`${tecnologia} logo`} class="w-6 h-6" />
+                )}
+                <span class="w-20">{tecnologia}</span>
+                <div class="flex space-x-1">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <div
+                      key={i}
+                      class={`w-4 h-4 rounded-full border-2 ${
+                        i < nivel
+                          ? "bg-[#2C5066] border-[#6096A4]"
+                          : "bg-[#D9D9D9] border-[#4C616B]"
+                      }`}
+                    ></div>
+                  ))}
+                </div>
+              </li>
+            ))}
+          </ul>
+          <ul class="space-y-4 p-6">
+            <!-- Segunda columna de habilidades -->
+            {infoHabilidades.habilidades.slice(6).map(({ imagen, tecnologia, nivel }) => (
+              <li class="flex items-center space-x-4" key={tecnologia}>
+                {imagen && (
+                  <img src={imagen} alt={`${tecnologia} logo`} class="w-6 h-6" />
+                )}
+                <span class="w-20">{tecnologia}</span>
+                <div class="flex space-x-1">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <div
+                      key={i}
+                      class={`w-4 h-4 rounded-full border-2 ${
+                        i < nivel
+                          ? "bg-[#2C5066] border-[#6096A4]"
+                          : "bg-[#D9D9D9] border-[#4C616B]"
+                      }`}
+                    ></div>
+                  ))}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>

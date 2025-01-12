@@ -1,0 +1,16 @@
+{
+  "contactos": [
+    {
+      "nombre": "ROBERT VLUG",
+      "puesto": "AUTOR",
+      "empresa": "'Tienda Online para Dummies'",
+      "referencia": "Una persona versátil, inteligente, que puede comunicarse de una manera normal. De fianza, decisivo. Durante la colaboración, aprendí mucho de él."
+    },
+    {
+      "nombre": "WAI KEUN MAN",
+      "puesto": "TESTER",
+      "empresa": "Telfort",
+      "referencia": "A very knowledgeable person, he was always one step ahead in providing solutions. A pleasure to work with."
+    }
+  ]
+}
