@@ -104,7 +104,7 @@ Este portfolio representa mi esfuerzo, creatividad y pasión por el desarrollo d
 
 ## Licencias
 
-Este proyecto está bajo la licencia MIT.  
+Este proyecto está bajo la licencia GNU GENERAL PUBLIC.  
 
 ---
 
